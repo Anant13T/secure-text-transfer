@@ -15,13 +15,11 @@ key_length = 600
 
 # DIFFIE HELLMAN KEY EXCHANGE PROTOCOL
  
-def generate_private_key(length):
-		
+def generate_private_key(length):	
 	_rand = 0
 	_bytes = length // 8 + 8
 	#Generate a random private key such that it's less than the prime number
 	while (_rand.bit_length() < length):
-		#TODO: Can use Crypto library hash functions
 		hex_key = binascii.b2a_hex(os.urandom(_bytes))
 		#Convert to denary format
 		_rand = int(hex_key.encode('hex') ,16)
