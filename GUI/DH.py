@@ -13,11 +13,8 @@ prime = 0xFFFFFFFFFFFFFFFFC90FDAA22168C234C4C6628B80DC1CD129024E088A67CC74020BBE
 generator = 2
 key_length = 600
 
-'''
---------------------------------------------------------
-********* DIFFIE HELLMAN KEY EXCHANGE PROTOCOL *********
---------------------------------------------------------
-'''
+# DIFFIE HELLMAN KEY EXCHANGE PROTOCOL
+ 
 def generate_private_key(length):
 		
 	_rand = 0
