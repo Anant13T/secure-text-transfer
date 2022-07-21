@@ -170,6 +170,9 @@ i {
 		left: -25px;
 	}
 }
+body{
+	background:url('https://wallpaperaccess.com/full/2159510.jpg');
+}
 </style>
 <script>
 	// ---------Responsive-navbar-active-animation-----------
@@ -215,8 +218,8 @@ $(".navbar-toggler").click(function(){
 </script>
 	</head>
 	<body style="color: white;">
-			<nav class="navbar navbar-expand-lg navbar-mainbg">
-        <a class="navbar-brand navbar-logo" href="#">SECUREZEN</a>
+			<nav class="navbar navbar-expand-lg bg-transparent">
+        <a class="navbar-brand navbar-logo" >TRANSFER</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
         </button>
@@ -235,15 +238,9 @@ $(".navbar-toggler").click(function(){
                 <li class="nav-item">
 					<a class="nav-link" href="/public-key-directory/">DOWNLOAD PUBLIC KEY</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="/register">REGISTER</a>
-                </li>
             </ul>
         </div>
 	</nav>
-	<div id='stars'></div>
-	<div id='stars2'></div>
-	<div id='stars3'></div>
 	<center>
 	{% if msg!=''%}
 		<h3 style="color: red">{{msg}}</h3>
