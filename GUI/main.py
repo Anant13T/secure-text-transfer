@@ -113,19 +113,7 @@ def main():
 	DecryptStep.grid(row=2, columnspan=7, sticky='W', \
     	             padx=5, pady=5, ipadx=5, ipady=5)
 
-	'''
-	-------------------------------------------------------------
-	Menu Bar
-	-------------------------------------------------------------
-	'''
-	menu = Menu(form)
-	form.config(menu=menu)
-
-	menufile = Menu(menu)
-	menufile.add_command(label = 'Send file', command = lambda:sendfilepage())
-	menufile.add_command(label = 'Recieve file', command = lambda:recievefilepage())
-	menufile.add_command(label = 'Exit', command = lambda:exit())
-	menu.add_cascade(label = 'Menu', menu = menufile)
+	
 	'''
 	-------------------------------------------------------------
 	ENCRYPT-SECTION
